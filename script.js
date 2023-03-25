@@ -48,7 +48,7 @@ function updateBackground() {
 	const currentDate = new Date();
 
 	const currentHour = currentDate.getHours();
-	if (currentHour > 17 || hour < 6) {
+	if (currentHour > 17 || currentHour < 6) {
 		stylingNight();
 	} else if (currentHour >= 12) {
 		stylingAfternoon();
